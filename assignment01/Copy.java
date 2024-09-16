@@ -37,6 +37,10 @@ public class Copy {
             fis.close();
             fos.close();
 
+            // Source file copied to destination successfully.
+            System.out.println(
+                    srcFile + " file copied to " + destFile + " successfully.");
+
         } catch (IOException e) {
             System.out.println(e.getMessage());
         } catch (SecurityException e) {

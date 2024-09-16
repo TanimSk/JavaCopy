@@ -41,12 +41,12 @@ public class Copy2 {
                 for (String child : children) {
                     copy(new File(source, child), new File(destination, child));
                 }
-                System.out.println("Copied " + source + " directory to " + destination + " Successfully");
+                System.out.println(source + " directory copied to " + destination + " successfully");
             }
         } else {
             // If the source is a file, copy it using streams
             copyFile(source, destination);
-            System.out.println("Copied " + source + " file to " + destination + " Successfully");
+            System.out.println(source + " file copied to " + destination + " successfully");
         }
     }
 
